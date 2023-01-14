@@ -15,24 +15,41 @@
 #   puts "up"
 # end
 
-# 演習1(四則演算)
-puts "演習1(四則演算)"
-number_1=10
-number_2=3
-number_3=2
-number_4=10_000
+# puts "演習1(四則演算)"
+# number_1=10
+# number_2=3
+# number_3=2
+# number_4=10_000
 
-puts "#{number_1} + #{number_2} = #{number_1 + number_2}"
-puts "#{number_1} - #{number_2} = #{number_1 - number_2}"
-puts "#{number_1} × #{number_2} = #{number_1 * number_2} "
-puts "#{number_4} ÷ #{number_1} = #{number_4 / number_1}"
-puts "#{number_1} ÷ #{number_2} = #{number_1 / number_2} 余り #{number_1 % number_2}"
-puts "#{number_3}の#{number_3}乗 = #{number_3 * number_3}"
-puts "#{number_3}の#{number_2}乗 = #{number_3 * number_3 * number_3}"
+# puts "#{number_1} + #{number_2} = #{number_1 + number_2}"
+# puts "#{number_1} - #{number_2} = #{number_1 - number_2}"
+# puts "#{number_1} × #{number_2} = #{number_1 * number_2} "
+# puts "#{number_4} ÷ #{number_1} = #{number_4 / number_1}"
+# puts "#{number_1} ÷ #{number_2} = #{number_1 / number_2} 余り #{number_1 % number_2}"
+# puts "#{number_3}の#{number_3}乗 = #{number_3 * number_3}"
+# puts "#{number_3}の#{number_2}乗 = #{number_3 * number_3 * number_3}"
 
-# 演習2(イテレーション)
+# puts "演習2(イテレーション)"
+# (1..30).each do |i|
+#   puts i
+# end
 
-puts "演習2(イテレーション)"
-(1..30).each do |i|
-  puts i
+# puts "演習3(イテレーションと剰余)"
+
+# (1..25).each do |i|
+#   puts i if i % 5 == 0
+# end
+
+puts "演習4(メソッド)"
+
+def modulus(mod)
+  (1..25).each do |i|
+    if (i % mod == 0)
+    puts i
+    elsif (mod > 25)
+    false
+    end
+  end
 end
+
+modulus(30)
