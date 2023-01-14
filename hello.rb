@@ -40,16 +40,32 @@
 #   puts i if i % 5 == 0
 # end
 
-puts "演習4(メソッド)"
+# puts "演習4(メソッド)"
 
-def modulus(mod)
-  (1..25).each do |i|
-    if (i % mod == 0)
-    puts i
-    elsif (mod > 25)
-    false
-    end
+# def modulus(mod)
+#   (1..25).each do |i|
+#     if (i % mod == 0)
+#     puts i
+#     elsif (mod > 25)
+#     false
+#     end
+#   end
+# end
+
+# modulus(30)
+
+puts "演習5(メソッド)"
+
+def check_alcohol(age)
+  if (20 > age)
+    return "NG"
+  else
+    return "OK"
   end
 end
 
-modulus(30)
+message = check_alcohol(20)
+puts "あなたの場合は、お酒は#{message}です"
+
+message = check_alcohol(19)
+puts "あなたの場合は、お酒は#{message}です"
