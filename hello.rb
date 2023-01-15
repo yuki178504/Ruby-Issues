@@ -54,18 +54,37 @@
 
 # modulus(30)
 
-puts "演習5(メソッド)"
+# puts "演習5(メソッド)"
 
-def check_alcohol(age)
-  if (20 > age)
-    return "NG"
+# def check_alcohol(age)
+#   if (20 > age)
+#     return "NG"
+#   else
+#     return "OK"
+#   end
+# end
+
+# message = check_alcohol(20)
+# puts "あなたの場合は、お酒は#{message}です"
+
+# message = check_alcohol(19)
+# puts "あなたの場合は、お酒は#{message}です"
+
+puts "演習6(if文)"
+
+def fizz_buzz(n)
+  if (n % 3 == 0)
+    "Fizz"
+  elsif (n % 5 == 0)
+    "Buzz"
+  elsif (n % 15 == 0)
+    "FizzBuzz"
   else
-    return "OK"
+    n
   end
 end
 
-message = check_alcohol(20)
-puts "あなたの場合は、お酒は#{message}です"
-
-message = check_alcohol(19)
-puts "あなたの場合は、お酒は#{message}です"
+puts fizz_buzz(3)
+puts fizz_buzz(5)
+puts fizz_buzz(15)
+puts fizz_buzz(14)
